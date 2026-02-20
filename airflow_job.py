@@ -24,7 +24,7 @@ with DAG(
 ) as dag:
 
     # Define GCS Bucket & File Pattern
-    gcs_bucket = "credit-card-data-analysis-gds"
+    gcs_bucket = "credit-card-data-analysis-gds1"
     file_pattern = "transactions/transactions_"
     source_prefix = "transactions/"
     archive_prefix = "archive/"
@@ -45,7 +45,7 @@ with DAG(
     # Task 2: Submit PySpark job to Dataproc Serverless
     batch_details = {
         "pyspark_batch": {
-            "main_python_file_uri": f"gs://credit-card-data-analysis-gds/spark_job/spark_job.py"
+            "main_python_file_uri": f"gs://credit-card-data-analysis-gds1/spark_job/spark_job.py"
         },
         "runtime_config": {
             "version": "2.2",
