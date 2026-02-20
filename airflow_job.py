@@ -63,7 +63,7 @@ with DAG(
         task_id="run_credit_card_processing_job",
         batch=batch_details,
         batch_id=batch_id,
-        project_id="mythic-aloe-457912-d5",
+        project_id="project-b33ba036-13df-409f-b4f",
         region="us-central1",
         gcp_conn_id="google_cloud_default",
     )
